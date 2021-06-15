@@ -1586,6 +1586,7 @@ clearLogsButton =
         [ Element.Input.button
             [ Element.Background.color Style.almostWhite
             , padding 10
+            , Element.htmlAttribute <| Html.Attributes.style "box-shadow" "none"
             ]
             { onPress = Just ClearLogs
             , label = Icon.trash 24
